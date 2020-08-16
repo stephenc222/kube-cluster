@@ -1,0 +1,12 @@
+[masters]
+# this is the IP address of the master node, replace with actual IP address
+master ansible_host=MASTER_IP_ADDRESS ansible_user=root
+
+[workers]
+# this is the IP address of the worker 1 node, replace with actual IP address
+worker1 ansible_host=WORKER_1_IP_ADDRESS ansible_user=root
+# this is the IP address of the worker 2 node, replace with actual IP address
+worker2 ansible_host=WORKER_2_IP_ADDRESS ansible_user=root
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
